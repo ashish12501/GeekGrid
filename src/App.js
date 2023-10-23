@@ -4,7 +4,7 @@ import { Home } from './pages/Home/home'
 import { Contact } from './pages/Contact/contact'
 import { Signin } from './pages/Signin/signin'
 import { Signup } from './pages/Signup/signup'
-import { Testimonials } from './pages/Testimonials/testimonials'
+import { Articles } from './pages/Articles/articles'
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Route path='/contacts' element={<Contact />} />
           <Route path='/signin' element={<Signin />} />
           <Route path='/signup' element={<Signup />} />
-          <Route path='/testimonials' element={<Testimonials />} />
+          <Route path='/articles' element={<Articles />} />
         </Routes>
       </Router>
     </div>
