@@ -20,6 +20,8 @@
     flex-direction: row;
     padding: 0 5vw;
     background-color: var(--primary-bg);
+    background-image: url("../assets/images/bg.png");
+    background-clip: none;
 }
 
 
