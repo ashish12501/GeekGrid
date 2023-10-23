@@ -1,0 +1,31 @@
+/* Just Creating Variables skeleton not sure about the colors right now */
+/* Just Creating Variables skeleton not sure about the colors right now */
+/* Just Creating Variables skeleton not sure about the colors right now */
+
+:root {
+    /* Primary Colors */
+    --primary-bg: #F0F0F0;
+    --primary-text: #333333;
+    --primary-link: #007BFF;
+
+    /* Secondary Colors */
+    --secondary-bg: #E5E5E5;
+    --secondary-text: #555555;
+    --secondary-link: #009688;
+
+    /* Accent Colors */
+    --accent-bg: #FF5722;
+    --accent-text: #FFFFFF;
+
+    /* Borders */
+    --border-color: #D1D1D1;
+
+    /* Call to Action */
+    --cta-bg: #3E50B4;
+    --cta-text: #FFFFFF;
+
+    /* Dark Mode */
+    --dark-bg: #333333;
+    --dark-text: #F0F0F0;
+    --dark-link: #4CAF50;
+}
