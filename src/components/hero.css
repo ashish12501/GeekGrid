@@ -1,0 +1,111 @@
+:root {
+    /* Primary Colors */
+    /* --primary-bg: #020817;
+    --primary-text: #f8f8f8;
+    --secondary-text: #cfcfcf; */
+
+    /* 
+    --primary-bg: #cfcfcf;
+    --primary-text: #1f1d1d;
+    --secondary-text: #020817; */
+
+    /* --primary-link: #007BFF; */
+
+    /* Secondary Colors */
+    /* --secondary-bg: #E5E5E5; */
+    /* --secondary-link: #009688; */
+
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 5vw;
+    background-color: var(--primary-bg);
+    background-image: url("../assets/images/bg.png");
+    background-attachment: fixed;
+    /* Add this line */
+}
+
+
+.hero .hero-left {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .hero-left h2 {
+    font-size: 3vw;
+    text-align: left;
+    color: var(--primary-text);
+    margin: 0;
+}
+
+.hero .hero-left .green-gradient {
+    background: linear-gradient(to right, #00c570, #75dda0);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.hero .hero-left .yellow-gradient {
+    background: linear-gradient(to right, #F4CE44, #ddd1a4);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+}
+
+.hero .hero-left h5 {
+    font-size: 1.2vw;
+    text-align: left;
+    color: var(--secondary-bg);
+    font-weight: 450;
+    margin-top: 10px;
+}
+
+.hero-right {
+    height: max-content;
+}
+
+.hero .hero-right img {
+    height: 33vw;
+    margin: 5vw 3vw 4vw 0;
+}
+
+.hero .hero-left .left-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5px;
+}
+
+.hero .hero-left .about-button {
+    background-color: var(--primary-bg);
+    border: 0.5px solid var(--secondary-bg);
+    border-radius: 15px;
+    padding: 7.5px 14px;
+    color: var(--primary-text);
+    font-size: 14px;
+}
+
+.hero .hero-left .started-button {
+    background-color: var(--secondary-bg);
+    border: none;
+    border-radius: 15px;
+    padding: 8px 14px;
+    margin-left: 1.5vw;
+    font-size: 14px;
+    color: var(--secondary-text);
+}
+
+.hero .hero-left .about-button:hover {
+    cursor: pointer;
+}
+
+.hero .hero-left .started-button:hover {
+    cursor: pointer;
+}
