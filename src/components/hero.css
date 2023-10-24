@@ -1,13 +1,18 @@
 :root {
     /* Primary Colors */
-    --primary-bg: #020817;
+    /* --primary-bg: #020817;
     --primary-text: #f8f8f8;
-    --secondary-text: #cfcfcf;
+    --secondary-text: #cfcfcf; */
+
+    /* 
+    --primary-bg: #cfcfcf;
+    --primary-text: #1f1d1d;
+    --secondary-text: #020817; */
 
     /* --primary-link: #007BFF; */
 
     /* Secondary Colors */
-    --secondary-bg: #E5E5E5;
+    /* --secondary-bg: #E5E5E5; */
     /* --secondary-link: #009688; */
 
 }
@@ -21,7 +26,8 @@
     padding: 0 5vw;
     background-color: var(--primary-bg);
     background-image: url("../assets/images/bg.png");
-    background-clip: none;
+    background-attachment: fixed;
+    /* Add this line */
 }
 
 
@@ -34,26 +40,30 @@
 .hero .hero-left h2 {
     font-size: 3vw;
     text-align: left;
-    color: white;
+    color: var(--primary-text);
     margin: 0;
 }
 
 .hero .hero-left .green-gradient {
     background: linear-gradient(to right, #00c570, #75dda0);
     -webkit-background-clip: text;
+    background-clip: text;
+
     color: transparent;
 }
 
 .hero .hero-left .yellow-gradient {
     background: linear-gradient(to right, #F4CE44, #ddd1a4);
     -webkit-background-clip: text;
+    background-clip: text;
+
     color: transparent;
 }
 
 .hero .hero-left h5 {
     font-size: 1.2vw;
     text-align: left;
-    color: white;
+    color: var(--secondary-bg);
     font-weight: 450;
     margin-top: 10px;
 }
@@ -89,6 +99,7 @@
     padding: 8px 14px;
     margin-left: 1.5vw;
     font-size: 14px;
+    color: var(--secondary-text);
 }
 
 .hero .hero-left .about-button:hover {
@@ -96,6 +107,5 @@
 }
 
 .hero .hero-left .started-button:hover {
-    background-color: var(--secondary-text);
     cursor: pointer;
 }
