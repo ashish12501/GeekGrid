@@ -7,7 +7,7 @@ import { Signup } from './pages/Signup/signup'
 import { Articles } from './pages/Articles/articles'
 import { Navbar } from './components/navbar'
 import { Footer } from './components/footer'
-
+import './variables.css'
 
 function App() {
   return (
