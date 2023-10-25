@@ -42,6 +42,7 @@
     text-align: left;
     color: var(--primary-text);
     margin: 0;
+    line-height: 1.2;
 }
 
 .hero .hero-left .green-gradient {
@@ -73,14 +74,14 @@
 }
 
 .hero .hero-right img {
-    height: 33vw;
-    margin: 5vw 3vw 4vw 0;
+    height: 31vw;
+    margin: 5vw 2vw 4vw 0;
 }
 
 .hero .hero-left .left-buttons {
     display: flex;
     flex-direction: row;
-    margin-top: -5px;
+    margin-top: 15px;
 }
 
 .hero .hero-left .about-button {
@@ -108,4 +109,5 @@
 
 .hero .hero-left .started-button:hover {
     cursor: pointer;
+    background-color: var(--hover-bg);
 }

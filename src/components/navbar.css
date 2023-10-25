@@ -5,12 +5,19 @@
     --primary-text: #1b1b1b;
     --secondary-text: #f8f8f8;
     --secondary-bg: #020817;
+    --hover-bg: #202020;
 
+    /* Comment Out The below variables to check in light thenme */
+    /* Comment Out The below variables to check in light thenme */
+    /* Comment Out The below variables to check in light thenme */
+    /* Comment Out The below variables to check in light thenme */
+    /* Comment Out The below variables to check in light thenme */
 
     --primary-bg: #020817;
     --primary-text: #f8f8f8;
     --secondary-text: #1b1b1b;
     --secondary-bg: #E5E5E5;
+    --hover-bg: #d4d1d1;
 
 }
 
@@ -19,7 +26,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0.7vw 5vw;
+    padding: 1.5vw 5vw;
     background-color: var(--primary-bg);
 
 
@@ -54,6 +61,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-left: 2vw;
 }
 
 .navbar .navbar-left ul li {
@@ -79,6 +87,6 @@
 }
 
 .navbar .navbar-right button:hover {
-    background-color: var(--secondary-bg);
+    background-color: var(--hover-bg);
     cursor: pointer;
 }
