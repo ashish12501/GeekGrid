@@ -13,7 +13,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5vw 5vw;
+    padding: 2vw 5vw;
     background-color: var(--primary-bg);
     font-family: 'Baloo Da 2', sans-serif;
 
@@ -29,9 +29,10 @@
 .navbar .navbar-left logo .logo-txt {
     line-height: 1;
     color: var(--primary-text);
+    color: #00b466;
     font-family: 'Baloo Da 2', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 
@@ -54,7 +55,7 @@
     font-weight: 600;
     color: var(--primary-text);
     font-family: 'Baloo Da 2', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .navbar .navbar-right button {
@@ -64,7 +65,7 @@
     background-color: var(--secondary-bg);
     font-family: sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--secondary-text);
     font-family: 'Baloo Da 2', sans-serif;
 }

@@ -4,15 +4,23 @@
     --secondary-text: #f8f8f8;
     --secondary-bg: #020817;
     --hover-bg: #202020;
+    --gradient-green2: #0bca77;
+    --gradient-green1: #008d3b;
+    --gradient-yellow2: #ffd53b;
+    --gradient-yellow1: #cea100;
 
     /* Comment Out The below variables to check in light thenme */
     /* Comment Out The below variables to check in light thenme */
     /* Comment Out The below variables to check in light thenme */
     /* Comment Out The below variables to check in light thenme */
 
-    --primary-bg: #020817;
+    /* --primary-bg: #020817;
     --primary-text: #f8f8f8;
     --secondary-text: #1b1b1b;
-    --secondary-bg: #E5E5E5;
+    --secondary-bg: #f8f8f8;
     --hover-bg: #d4d1d1;
+    --gradient-green2: #75dda0;
+    --gradient-green1: #00c570;
+    --gradient-yellow1: #F4CE44;
+    --gradient-yellow2: #ddd1a4; */
 }

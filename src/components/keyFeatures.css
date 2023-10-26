@@ -1,0 +1,45 @@
+.keyFeature {
+    height: max-content;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyContainer {
+    height: max-content;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.keyCardContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: max-content;
+    width: 90%;
+}
+
+.keyCard {
+    margin: 10vh 0;
+    height: 42vh;
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.keyCard-Top {
+    height: 45%;
+    background-color: rgb(194, 152, 233);
+}
+
+.keyCard-Bottom {
+    height: 55%;
+    background-color: white;
+    border-radius: 0% 0% 47% 47%;
+
+}
