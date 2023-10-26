@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700;1,800&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Patua+One&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+
+
+
+
+    
+    
+  
+
+    /* Comment Out The below variables to check in light thenme */
+    /* Comment Out The below variables to check in light thenme */
+    /* Comment Out The below variables to check in light thenme */
+    /* Comment Out The below variables to check in light thenme */
+    /* Comment Out The below variables to check in light thenme */
+
+
+
+
+
+
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw 5vw;
+    background-color: var(--primary-bg);
+
+
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Patua One', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .navbar-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-left logo .logo-txt {
+    line-height: 1;
+    color: var(--primary-text);
+}
+
+.navbar .navbar-left logo .logo-txt {
+    /*font-family: 'Patua One', serif;
+    font-family: 'Poppins', sans-serif; */
+
+    font-weight: 900;
+    font-size: larger;
+}
+
+.navbar .navbar-left ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.navbar .navbar-left ul li {
+    list-style-type: none;
+}
+
+.navbar .navbar-left .links {
+    text-decoration: none;
+    margin-left: 2.5vw;
+    font-weight: 600;
+    color: var(--primary-text);
+}
+
+.navbar .navbar-right button {
+    padding: 11px 17px;
+    border-radius: 27px;
+    border: none;
+    background-color: var(--secondary-bg);
+    font-family: sans-serif;
+    font-weight: 550;
+    font-size: 14px;
+    color: var(--secondary-text);
+}
+
+.navbar .navbar-right button:hover {
+    background-color: var(--hover-bg);
+    cursor: pointer;
+}
