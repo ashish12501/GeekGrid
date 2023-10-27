@@ -20,13 +20,13 @@
     
 }
 .left-article .article-box p{
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     color:var(--primary-text) ;
 }
 .left-article .article-box button{
    
     width: 9vw;
-    padding: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
     border: none;
     background-color: var(--button-bg);
     color: var(--button-text);
@@ -40,6 +40,8 @@
     text-align:left ;
     margin-left:100px;
     color: var(--primary-text);
+    /* position: fixed; */
+
 }
 .right-article h3{
     font-size: 25px;
