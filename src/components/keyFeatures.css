@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700;1,800&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Patua+One&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
 .keyFeature {
     height: max-content;
     /* width: 100vw; */
@@ -13,6 +15,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0vh 5vh 7vh 5vh;
+    background-color: white;
+}
+
+.keyContainer h2 {
+    font-family: 'Baloo Da 2', sans-serif;
+    margin: 10px 0;
+}
+
+.keyContainer p {
+    font-family: 'Baloo Da 2', sans-serif;
 }
 
 .keyCardContainer {
@@ -27,19 +40,29 @@
 .keyCard {
     margin: 10vh 0;
     height: 42vh;
-    width: 17vw;
+    width: 15vw;
     display: flex;
     flex-direction: column;
+
 }
 
 .keyCard-Top {
+    height: max-content;
+    background-color: #0bca77;
     height: 45%;
-    background-color: rgb(194, 152, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyCard-Top img {
+    height: 100px;
 }
 
 .keyCard-Bottom {
     height: 55%;
-    background-color: white;
+    background-color: var(--primary-bg);
     border-radius: 0% 0% 47% 47%;
+    border: 1px solid #0bca77;
 
 }

@@ -1,5 +1,10 @@
 import React from 'react'
 import './keyFeatures.css'
+import card1 from '../assets/images/card1.png'
+import card2 from '../assets/images/card2.png'
+import card3 from '../assets/images/card3.png'
+
+
 
 export function KeyFeature() {
     return (
@@ -10,7 +15,7 @@ export function KeyFeature() {
                 <div className="keyCardContainer">
                     <div className='keyCard'>
                         <div className='keyCard-Top'>
-
+                            <img src={card1} alt="" />
                         </div>
                         <div className='keyCard-Bottom'>
 
@@ -19,6 +24,7 @@ export function KeyFeature() {
                     </div>
                     <div className='keyCard'>
                         <div className='keyCard-Top'>
+                            <img src={card2} alt="" />
 
                         </div>
                         <div className='keyCard-Bottom'>
@@ -28,6 +34,7 @@ export function KeyFeature() {
                     </div>
                     <div className='keyCard'>
                         <div className='keyCard-Top'>
+                            <img src={card3} alt="" />
 
                         </div>
                         <div className='keyCard-Bottom'>
