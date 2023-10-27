@@ -3,6 +3,7 @@ import './keyFeatures.css'
 import card1 from '../assets/images/card1.png'
 import card2 from '../assets/images/card2.png'
 import card3 from '../assets/images/card3.png'
+import bottomCard from '../assets/images/bottomCard.png'
 
 
 
@@ -18,29 +19,27 @@ export function KeyFeature() {
                             <img src={card1} alt="" />
                         </div>
                         <div className='keyCard-Bottom'>
-
-                        </div>
-                        <h3>Blending Learning</h3>
-                    </div>
-                    <div className='keyCard'>
-                        <div className='keyCard-Top'>
-                            <img src={card2} alt="" />
-
-                        </div>
-                        <div className='keyCard-Bottom'>
-
+                            <img src={bottomCard} alt="" />
                         </div>
                         <h3>Adaptive Learning</h3>
                     </div>
                     <div className='keyCard'>
                         <div className='keyCard-Top'>
-                            <img src={card3} alt="" />
-
+                            <img src={card2} alt="" />
                         </div>
                         <div className='keyCard-Bottom'>
-
+                            <img src={bottomCard} alt="" />
                         </div>
-                        <h3>Social Learning</h3>
+                        <h3>Tech Updates</h3>
+                    </div>
+                    <div className='keyCard'>
+                        <div className='keyCard-Top'>
+                            <img src={card3} alt="" />
+                        </div>
+                        <div className='keyCard-Bottom'>
+                            <img src={bottomCard} alt="" />
+                        </div>
+                        <h3>Job Alerts</h3>
                     </div>
                 </div>
             </div>

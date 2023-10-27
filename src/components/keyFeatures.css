@@ -10,22 +10,30 @@
 
 .keyContainer {
     height: max-content;
-    width: 75vw;
+    width: 83vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0vh 5vh 7vh 5vh;
+    padding: 0vh 7vh 7vh 7vh;
     background-color: white;
+    box-shadow: 0px 4px 7px 0 #cfcfcf, 0px 6px 10px 0 #cfcfcf;
+    padding: 20px 15px;
 }
 
 .keyContainer h2 {
     font-family: 'Baloo Da 2', sans-serif;
-    margin: 10px 0;
+    font-size: 2.5vw;
+    color: #0bca77;
+
 }
 
 .keyContainer p {
     font-family: 'Baloo Da 2', sans-serif;
+    width: 65%;
+    font-size: 1.2vw;
+    font-weight: 450;
+    line-height: 1.2;
 }
 
 .keyCardContainer {
@@ -38,12 +46,11 @@
 }
 
 .keyCard {
-    margin: 10vh 0;
+    margin: 7vh 0 5vh 0;
     height: 42vh;
     width: 15vw;
     display: flex;
     flex-direction: column;
-
 }
 
 .keyCard-Top {
@@ -59,10 +66,25 @@
     height: 100px;
 }
 
+
+
 .keyCard-Bottom {
     height: 55%;
     background-color: var(--primary-bg);
     border-radius: 0% 0% 47% 47%;
     border: 1px solid #0bca77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.keyCard-Bottom img {
+    height: 90px;
+}
+
+.keyCard h3 {
+    font-family: 'Baloo Da 2', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-top: 10px;
 }
