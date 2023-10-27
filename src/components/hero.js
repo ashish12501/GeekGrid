@@ -6,7 +6,7 @@ export function Hero() {
         <div className='hero'>
             <div className='hero-left'>
                 <h2><span className='green-gradient'>Transforming</span> Graduates <br></br> into <span className='yellow-gradient'>Professionals</span></h2>
-                <h5>Unlocking Career Potential with GeekGrid:Your Source <br />for Expert Guidance, Skill Mastery, and Pathway to <br />Success.</h5>
+                <h5>Unlocking Career Potential with GeekGrid: Your Source <br />for Expert Guidance, Skill Mastery, and Pathway to <br />Success.</h5>
                 <buttons className="left-buttons">
                     <button className='about-button'>About Us</button>
                     <button className='started-button'>Get Started</button>

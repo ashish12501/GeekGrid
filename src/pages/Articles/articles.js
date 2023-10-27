@@ -1,15 +1,29 @@
+import "./article.css";
+
 import { useGetArticles } from "../../hooks/getarticle";
 export function Articles() {
   const {articles}=useGetArticles();
 return (
-  <div> 
+  <div className="parent-article">
+    <div className="left-article"> 
         {articles.map((article) => (
-            <>
+            <div className="article-box">
               <h3>{article.title}</h3>
-            <br/>
+            
             <p>{article.intro}</p>
-            </>
+            <button>Continue Reading</button>
+            </div>
         ))}
     </div>
+    <div className="right-article">
+      <h3>Wanna Collaborate ?</h3>
+      <p className="paragraph">
+        Write us mail at ....
+      </p>
+      <p className="paragraph-2">amanpandeyap3@gmail.com</p>
+
+    </div>
+  </div>
+ 
 );
 };

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700;1,800&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Patua+One&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
+
+.keyFeature {
+    height: max-content;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyContainer {
+    height: max-content;
+    width: 83vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0vh 6vh 7vh 6vh;
+    box-shadow: 1px 4px 7px 0 var(--box-shadow), 2px 6px 10px 0 var(--box-shadow);
+    padding: 20px 15px;
+    background-color: var(--secondary-text);
+}
+
+.keyContainer h2 {
+    font-family: 'Baloo Da 2', sans-serif;
+    font-size: 2.5vw;
+    color: #0bca77;
+}
+
+.keyContainer p {
+    font-family: 'Baloo Da 2', sans-serif;
+    width: 65%;
+    font-size: 1.2vw;
+    font-weight: 450;
+    line-height: 1.2;
+    color: var(--primary-text);
+}
+
+.keyCardContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: max-content;
+    width: 90%;
+}
+
+.keyCard {
+    margin: 7vh 0 5vh 0;
+    height: 42vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.keyCard-Top {
+    height: max-content;
+    background-color: #0bca77;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyCard-Top img {
+    height: 100px;
+}
+
+
+
+.keyCard-Bottom {
+    height: 55%;
+    background-color: var(--primary-bg);
+    border-radius: 0% 0% 47% 47%;
+    border: 1px solid #0bca77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyCard-Bottom img {
+    height: 90px;
+    background-color: var(--secondary-text);
+    background-color: white;
+    border-radius: 55%;
+}
+
+.keyCard h3 {
+    font-family: 'Baloo Da 2', sans-serif;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--primary-text);
+
+}

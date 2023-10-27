@@ -1,22 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700;1,800&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Patua+One&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700;1,800&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Patua+One&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
 
 
-
-
-    
-    
-  
-
-    /* Comment Out The below variables to check in light thenme */
-    /* Comment Out The below variables to check in light thenme */
-    /* Comment Out The below variables to check in light thenme */
-    /* Comment Out The below variables to check in light thenme */
-    /* Comment Out The below variables to check in light thenme */
-
-
-
-
+/* font-family: 'Baloo Da 2', sans-serif; */
 
 
 
@@ -26,14 +13,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5vw 5vw;
+    padding: 2vw 5vw;
     background-color: var(--primary-bg);
+    font-family: 'Baloo Da 2', sans-serif;
 
-
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Outfit', sans-serif;
-    font-family: 'Patua One', serif;
-    font-family: 'Poppins', sans-serif;
 }
 
 .navbar .navbar-left {
@@ -46,15 +29,12 @@
 .navbar .navbar-left logo .logo-txt {
     line-height: 1;
     color: var(--primary-text);
+    color: #00b466;
+    font-family: 'Baloo Da 2', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
 }
 
-.navbar .navbar-left logo .logo-txt {
-    /*font-family: 'Patua One', serif;
-    font-family: 'Poppins', sans-serif; */
-
-    font-weight: 900;
-    font-size: larger;
-}
 
 .navbar .navbar-left ul {
     display: flex;
@@ -66,6 +46,7 @@
 
 .navbar .navbar-left ul li {
     list-style-type: none;
+
 }
 
 .navbar .navbar-left .links {
@@ -73,17 +54,20 @@
     margin-left: 2.5vw;
     font-weight: 600;
     color: var(--primary-text);
+    font-family: 'Baloo Da 2', sans-serif;
+    font-size: 20px;
 }
 
 .navbar .navbar-right button {
-    padding: 11px 17px;
+    padding: 4px 17px;
     border-radius: 27px;
     border: none;
     background-color: var(--secondary-bg);
     font-family: sans-serif;
-    font-weight: 550;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 18px;
     color: var(--secondary-text);
+    font-family: 'Baloo Da 2', sans-serif;
 }
 
 .navbar .navbar-right button:hover {

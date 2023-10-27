@@ -4,6 +4,7 @@ import { Home } from './pages/Home/home'
 import { Contact } from './pages/Contact/contact'
 import { Signin } from './pages/Signin/signin'
 import { Signup } from './pages/Signup/signup'
+import { AddData } from './pages/Admin/addData'
 import { Articles } from './pages/Articles/articles'
 import { Navbar } from './components/navbar'
 import { Footer } from './components/footer'
@@ -21,8 +22,9 @@ function App() {
           <Route path='/signin' element={<Signin />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/articles' element={<Articles />} />
+          <Route path='/admin' element={<AddData />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );
