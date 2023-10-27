@@ -20,10 +20,16 @@
     --secondary-text: #181818;
     --secondary-bg: #f8f8f8;
     --hover-bg: #d4d1d1;
+
     --gradient-green2: #75dda0;
     --gradient-green1: #00c570;
     --gradient-yellow1: #F4CE44;
     --gradient-yellow2: #ddd1a4;
     --box-shadow: #272727; */
+
+    /* variable for button */
+    --button-bg:#02A960;
+    --button-text:#f8f8f8;
+   
 
 }
