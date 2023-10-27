@@ -15,4 +15,11 @@
     --secondary-text: #1b1b1b;
     --secondary-bg: #E5E5E5;
     --hover-bg: #d4d1d1;
+
+    /* variable for button */
+    --button-bg:#02A960;
+    --button-text:#f8f8f8;
+    
+
+
 }
