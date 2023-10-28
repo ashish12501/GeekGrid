@@ -8,6 +8,7 @@ import { AddData } from './pages/Admin/addData'
 import { Articles } from './pages/Articles/articles'
 import { Navbar } from './components/navbar'
 import { Footer } from './components/footer'
+import { CoursePlayer } from './pages/CoursePlayer/coursePlayer'
 import './variables.css'
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
           <Route path='/signup' element={<Signup />} />
           <Route path='/articles' element={<Articles />} />
           <Route path='/admin' element={<AddData />} />
+          <Route path='/stream' element={<CoursePlayer />} />
+
         </Routes>
         <Footer />
       </Router>
