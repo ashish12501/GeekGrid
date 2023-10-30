@@ -19,14 +19,14 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/learn' element={<learn />} />
+          {/* <Route path='/learn' element={<learn />} /> */}
           <Route path='/contacts' element={<Contact />} />
           <Route path='/signin' element={<Signin />} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/articles' element={<Articles />} />
           <Route path='/admin' element={<AddData />} />
           <Route path='/streamer/:id' element={<VideoPlayerPage />} />
-          <Route path="/courses" element={<VideoListPage />} />
+          <Route path="/learn" element={<VideoListPage />} />
         </Routes>
         <Footer />
       </Router>
