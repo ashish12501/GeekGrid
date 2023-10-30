@@ -43,7 +43,7 @@ footer .content .top {
 }
 
 .content .top .logo-details {
-    color: var(--primary-text);
+    color: var(--button-bg);
     font-size: 30px;
 }
 
@@ -75,7 +75,7 @@ footer .content .link-boxes .box {
     bottom: -2px;
     height: 2px;
     width: 35px;
-    background: var(--primary-text);
+    background: var(--button-bg);
 }
 
 .content .link-boxes .box li {
@@ -121,7 +121,7 @@ footer .content .link-boxes .box {
 }
 
 .link-boxes .input-box input[type="button"] {
-    background: var(--primary-text);
+    background: var(--button-bg);
     color: var(--primary-bg);
     border: none;
     font-size: 18px;
@@ -153,7 +153,7 @@ footer .bottom-details .bottom_text {
 .bottom-details .bottom_text a {
     font-size: 14px;
     font-weight: 300;
-    color: var(--primary-text);
+    color: var(--button-bg);
     opacity: 0.8;
     text-decoration: none;
 }

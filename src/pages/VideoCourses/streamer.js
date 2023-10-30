@@ -24,7 +24,7 @@ export const VideoPlayerPage = () => {
                 src={selectedVideo.embedLink}
                 title={selectedVideo.name}
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="accelerometer; gyroscope; picture-in-picture; "
                 allowFullScreen
             />
         </div>
