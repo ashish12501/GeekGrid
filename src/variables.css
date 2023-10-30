@@ -15,7 +15,9 @@
     /* Comment Out The below variables to check in light thenme */
     /* Comment Out The below variables to check in light thenme */
 
-    /* --primary-bg: #1C1E1F;
+    /* --primary-bg: #1C1E1F; */
+    --primary-bg: #0F0F0F;
+
     --primary-text: #f8f8f8;
     --secondary-text: #181818;
     --secondary-bg: #f8f8f8;
@@ -25,11 +27,11 @@
     --gradient-green1: #00c570;
     --gradient-yellow1: #F4CE44;
     --gradient-yellow2: #ddd1a4;
-    --box-shadow: #272727; */
+    --box-shadow: #0a0a0a;
 
     /* variable for button */
-    --button-bg:#02A960;
-    --button-text:#f8f8f8;
-   
+    --button-bg: #02A960;
+    --button-text: #f8f8f8;
+
 
 }
