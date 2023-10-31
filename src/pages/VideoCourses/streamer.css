@@ -28,6 +28,16 @@
     margin: 10px 0;
 }
 
+.suggestion-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion-name .instructor-name {
+    font-size: 0.8vw;
+    margin-top: 5px;
+}
+
 /* 
 .suggested-videos {
     height: 40vh;
@@ -51,7 +61,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .video-name-button button {
@@ -76,4 +86,32 @@
 
 .video-player-left span {
     font-weight: 500;
+}
+
+.video-player-right .instructor-about {
+    text-align: left;
+
+}
+
+.video-player-right .instructor-about .about-name-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.video-player-right .instructor-about .about-name-image img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.video-player-right .suggested-videos {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.video-player-right .instructor-bio {
+    margin-top: 10px;
+    font-size: 0.8vw;
 }

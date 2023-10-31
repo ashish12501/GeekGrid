@@ -7,7 +7,6 @@ import { VideoList } from '../../assets/videosList';
 export const VideoPlayerPage = () => {
     const { id } = useParams(); // Get the video ID from the URL parameter
     const selectedVideo = VideoList.find((video) => video.id === id);
-
     if (!selectedVideo) {
         return <div>Video not found</div>;
     }
@@ -38,7 +37,11 @@ export const VideoPlayerPage = () => {
             <div className='video-player-right'>
                 <div className='instructor-about'>
                     <h3>About the instructor</h3>
-                    <p>{selectedVideo.instructorname}</p>
+                    <div className='about-name-image'>
+                        <img src={selectedVideo.instructorImage} alt="" />
+                        <p>{selectedVideo.instructorname}</p>
+                    </div>
+                    <p className='instructor-bio'>{selectedVideo.instructorBio}</p>
                 </div>
                 <div className='suggested-videos'>
                     <h3>Suggested Courses</h3>
@@ -48,7 +51,10 @@ export const VideoPlayerPage = () => {
                             return (
                                 <div className='suggestion'>
                                     <img src={video.image} alt={video.name} />
-                                    <p key={video.id}>{video.name}</p>
+                                    <div className='suggestion-name'>
+                                        <p key={video.id}>{video.name}</p>
+                                        <p className='instructor-name'>{video.instructorname}</p>
+                                    </div>
                                 </div>
                             );
                         }
