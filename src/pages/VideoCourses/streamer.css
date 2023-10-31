@@ -1,0 +1,117 @@
+.streamer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+}
+
+.video-player-left {
+    padding: 0 60px;
+    display: flex;
+    align-items: left;
+}
+
+.video-player-left iframe {
+    height: 67vh;
+    width: 56vw;
+}
+
+.video-player-right {
+    display: flex;
+    flex-direction: column;
+    width: 29vw;
+}
+
+.suggestion {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.suggestion-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion-name .instructor-name {
+    font-size: 0.8vw;
+    margin-top: 5px;
+}
+
+/* 
+.suggested-videos {
+    height: 40vh;
+} */
+
+.suggestion img {
+    width: 8vw;
+}
+
+.suggestion p {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.video-player-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-name-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.video-name-button button {
+    /* width: 9vw; */
+    padding: 4px 8px 4px 8px;
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    font-weight: 500;
+}
+
+.video-name-button h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.video-player-left p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.video-player-left span {
+    font-weight: 500;
+}
+
+.video-player-right .instructor-about {
+    text-align: left;
+
+}
+
+.video-player-right .instructor-about .about-name-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.video-player-right .instructor-about .about-name-image img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.video-player-right .suggested-videos {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.video-player-right .instructor-bio {
+    margin-top: 10px;
+    font-size: 0.8vw;
+}
