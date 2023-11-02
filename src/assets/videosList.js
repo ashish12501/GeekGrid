@@ -5,7 +5,7 @@ export const VideoList = [
         name: 'Basics of Command Line (CMD)',
         image: require('../assets/images/CMD.jpg'),
         embedLink: "https://www.youtube.com/embed/QZ71hx19qcg?si=4dmdcRYWxdo1HSIc",
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
     },
@@ -14,7 +14,7 @@ export const VideoList = [
         name: 'PM Speech Analysis Project overview',
         image: require('../assets/images/Namo.jpg'),
         embedLink: 'https://www.youtube.com/embed/WIOVqO8xqts?si=ZOfTn4kKGUkVuU86',
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
 
@@ -29,7 +29,7 @@ export const VideoList = [
         name: 'Basics of Command Line (CMD)',
         image: require('../assets/images/CMD.jpg'),
         embedLink: "https://www.youtube.com/embed/QZ71hx19qcg?si=4dmdcRYWxdo1HSIc",
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
 
@@ -39,7 +39,7 @@ export const VideoList = [
         name: 'PM Speech Analysis Project overview',
         image: require('../assets/images/Namo.jpg'),
         embedLink: 'https://www.youtube.com/embed/WIOVqO8xqts?si=ZOfTn4kKGUkVuU86',
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
 
@@ -48,7 +48,7 @@ export const VideoList = [
         name: 'Basics of Command Line (CMD)',
         image: require('../assets/images/CMD.jpg'),
         embedLink: "https://www.youtube.com/embed/QZ71hx19qcg?si=4dmdcRYWxdo1HSIc",
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
 
@@ -58,7 +58,8 @@ export const VideoList = [
         name: 'PM Speech Analysis Project overview',
         image: require('../assets/images/Namo.jpg'),
         embedLink: 'https://www.youtube.com/embed/WIOVqO8xqts?si=ZOfTn4kKGUkVuU86',
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
+
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
 
@@ -67,7 +68,7 @@ export const VideoList = [
         name: 'Basics of Command Line (CMD)',
         image: require('../assets/images/CMD.jpg'),
         embedLink: "https://www.youtube.com/embed/QZ71hx19qcg?si=4dmdcRYWxdo1HSIc",
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
 
@@ -77,7 +78,7 @@ export const VideoList = [
         name: 'PM Speech Analysis Project overview',
         image: require('../assets/images/Namo.jpg'),
         embedLink: 'https://www.youtube.com/embed/WIOVqO8xqts?si=ZOfTn4kKGUkVuU86',
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
 
@@ -86,7 +87,7 @@ export const VideoList = [
         name: 'Basics of Command Line (CMD)',
         image: require('../assets/images/CMD.jpg'),
         embedLink: "https://www.youtube.com/embed/QZ71hx19qcg?si=4dmdcRYWxdo1HSIc",
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
     },
@@ -95,7 +96,7 @@ export const VideoList = [
         name: 'PM Speech Analysis Project overview',
         image: require('../assets/images/Namo.jpg'),
         embedLink: 'https://www.youtube.com/embed/WIOVqO8xqts?si=ZOfTn4kKGUkVuU86',
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
     }, {
@@ -103,7 +104,7 @@ export const VideoList = [
         name: 'Basics of Command Line (CMD)',
         image: require('../assets/images/CMD.jpg'),
         embedLink: "https://www.youtube.com/embed/QZ71hx19qcg?si=4dmdcRYWxdo1HSIc",
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
     },
@@ -112,7 +113,7 @@ export const VideoList = [
         name: 'PM Speech Analysis Project overview',
         image: require('../assets/images/Namo.jpg'),
         embedLink: 'https://www.youtube.com/embed/WIOVqO8xqts?si=ZOfTn4kKGUkVuU86',
-        instructorname: "Aman Shrivastava",
+        instructorname: "Rebilion Coder",
         instructorImage: require('../assets/images/rebelion.jpg'),
         instructorBio: 'Currently working as an SDE at a prestigious company, Aman Shrivastava, also known by his online persona Rebilion Coder, is knowledgeable in a variety of tech stack areas, such as web development, web scraping, and data science.',
     },

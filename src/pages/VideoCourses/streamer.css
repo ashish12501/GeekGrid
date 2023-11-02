@@ -19,7 +19,7 @@
 .video-player-right {
     display: flex;
     flex-direction: column;
-    width: 29vw;
+    width: 30vw;
 }
 
 .suggestion {
@@ -38,10 +38,6 @@
     margin-top: 5px;
 }
 
-/* 
-.suggested-videos {
-    height: 40vh;
-} */
 
 .suggestion img {
     width: 8vw;
@@ -65,7 +61,6 @@
 }
 
 .video-name-button button {
-    /* width: 9vw; */
     padding: 4px 8px 4px 8px;
     border: none;
     background-color: var(--button-bg);
@@ -90,7 +85,6 @@
 
 .video-player-right .instructor-about {
     text-align: left;
-
 }
 
 .video-player-right .instructor-about .about-name-image {
