@@ -23,7 +23,7 @@ export function Navbar() {
             </div>
             <div className='navbar-right'>
                 {theme === "light" ? <p className='mode-name'>Light mode</p> : <p className='mode-name'>Dark mode</p>}
-                <ReactSwitch className='toggle-button' onChange={toggleTheme} checked={theme === "light"} />
+                <ReactSwitch className='toggle-button' onChange={toggleTheme} checked={theme === "light"} onColor="#02A960" />
                 <button>Login / SignUp</button>
             </div>
         </div>
