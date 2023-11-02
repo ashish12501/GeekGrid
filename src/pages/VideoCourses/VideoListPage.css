@@ -2,6 +2,7 @@
     margin: auto 0;
     padding: 0px 70px 50px 70px;
     color: var(--primary-text);
+    background-color: var(--primary-bg);
 }
 
 .ListPage h1 {

@@ -1,4 +1,4 @@
-:root {
+#light {
     --primary-bg: #f8f8f8;
     --primary-text: #1b1b1b;
     --secondary-text: #ffff;
@@ -9,18 +9,11 @@
     --gradient-yellow2: #ffd53b;
     --gradient-yellow1: #cea100;
     --box-shadow: #cecece;
-
-
-    /* variable for button */
     --button-bg: #02A960;
     --button-text: #f8f8f8;
+}
 
-
-    /* Comment Out The below variables to check in light thenme */
-    /* Comment Out The below variables to check in light thenme */
-    /* Comment Out The below variables to check in light thenme */
-    /* Comment Out The below variables to check in light thenme */
-
+#dark {
     --primary-bg: #0F0F0F;
     --primary-text: #f8f8f8;
     --secondary-text: #181818;
@@ -31,7 +24,6 @@
     --gradient-yellow1: #F4CE44;
     --gradient-yellow2: #ddd1a4;
     --box-shadow: #0a0a0a;
-
-
-
+    --button-bg: #02A960;
+    --button-text: #f8f8f8;
 }

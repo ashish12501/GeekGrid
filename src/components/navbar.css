@@ -58,6 +58,23 @@
     font-size: 20px;
 }
 
+.navbar-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-right .toggle-button {
+    /* width: 2vw; */
+    size: 40px;
+    margin-right: 1.5vw;
+}
+
+.mode-name {
+    color: var(--primary-text);
+    margin-right: 1vw;
+}
+
 .navbar .navbar-right button {
     padding: 4px 17px;
     border-radius: 27px;
