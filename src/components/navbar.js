@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './navbar.css'
+import ReactSwitch from 'react-switch'
+import { useContext } from 'react'
+import { themeContext } from '../App'
+
 export function Navbar() {
+    const { toggleTheme, theme } = useContext(themeContext)
     return (
         <div className='navbar'>
             <div className='navbar-left'>
@@ -17,6 +22,8 @@ export function Navbar() {
                 </links>
             </div>
             <div className='navbar-right'>
+                {theme === "light" ? <p className='mode-name'>Light mode</p> : <p className='mode-name'>Dark mode</p>}
+                <ReactSwitch className='toggle-button' onChange={toggleTheme} checked={theme === "light"} />
                 <button>Login / SignUp</button>
             </div>
         </div>

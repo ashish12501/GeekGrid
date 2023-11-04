@@ -15,15 +15,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0vh 6vh 7vh 6vh;
     box-shadow: 1px 4px 7px 0 var(--box-shadow), 2px 6px 10px 0 var(--box-shadow);
-    padding: 20px 15px;
+    padding: 10px 15px;
     background-color: var(--secondary-text);
 }
 
 .keyContainer h2 {
     font-family: 'Baloo Da 2', sans-serif;
-    font-size: 2.5vw;
+    font-size: 2.4vw;
     color: #0bca77;
 }
 
@@ -47,8 +46,8 @@
 
 .keyCard {
     margin: 7vh 0 5vh 0;
-    height: 42vh;
-    width: 15vw;
+    height: 40vh;
+    width: 14vw;
     display: flex;
     flex-direction: column;
 }
