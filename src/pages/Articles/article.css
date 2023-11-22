@@ -1,6 +1,7 @@
 .parent-article {
     display: flex;
     flex-direction: row;
+    
 }
 
 .left-article {
@@ -10,6 +11,8 @@
     text-align: left;
     margin-left: 80px;
     margin-top: 40px;
+    
+    
 }
 
 .left-article .article-box h3 {
@@ -22,6 +25,7 @@
 .left-article .article-box p{
     margin-bottom: 8px;
     color:var(--primary-text) ;
+}
 
 
 .left-article .article-box p {
@@ -32,11 +36,12 @@
 
 .left-article .article-box button {
     width: 9vw;
-    padding: 8px 8px 8px 8px;
+    padding: 0.5vw;
     border: none;
     background-color: var(--button-bg);
     color: var(--button-text);
     font-weight: 500;
+    font-size: 0.8vw;
 }
 
 .right-article {
@@ -47,7 +52,7 @@
     text-align: left;
     margin-left: 100px;
     color: var(--primary-text);
-    /* position: fixed; */
+   
 
 }
 
@@ -70,4 +75,9 @@
 
 .article-box {
     padding: 25px 0;
+}
+.left-article {
+  overflow-x: hidden;
+  overflow-y: auto;
+  overflow: scroll;
 }
