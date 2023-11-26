@@ -1,4 +1,27 @@
 /* SignupForm.css */
+.signupPage {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.signupPage-right {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-bg);
+    border-radius: 35% 0 0 20%;
+}
+
+.signupPage-left {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .button-label {
     display: inline-block;
@@ -8,14 +31,13 @@
     color: #fff;
     border: none;
     cursor: pointer;
-  }
-  
-  .button-label:hover {
+}
+
+.button-label:hover {
     background-color: #2980b9;
-  }
-  
-  /* Style for active button */
-  .button-label.active {
+}
+
+/* Style for active button */
+.button-label.active {
     background-color: #2980b9;
-  }
-  
+}

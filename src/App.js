@@ -38,7 +38,7 @@ function App() {
             <Route path='/streamer/:id' element={<VideoPlayerPage />} />
             <Route path="/learn" element={<VideoListPage />} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
         </Router>
       </div >
     </themeContext.Provider>
