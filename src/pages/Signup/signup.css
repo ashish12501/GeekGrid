@@ -1,0 +1,21 @@
+/* SignupForm.css */
+
+.button-label {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-label:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Style for active button */
+  .button-label.active {
+    background-color: #2980b9;
+  }
+  
