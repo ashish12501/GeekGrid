@@ -12,7 +12,31 @@
     justify-content: center;
     align-items: center;
     background-color: var(--button-bg);
-    border-radius: 35% 0 0 20%;
+    border-radius: 35% 0 0 18%;
+    color: #fff;
+}
+
+.signupPage-right h1 {
+    font-size: 2.5rem;
+}
+
+.signupPage-right h3 {
+    font-size: 1.3rem;
+    width: 70%;
+    font-weight: 450;
+    margin: 5px;
+
+}
+
+.signupPage-right button {
+    margin: 15px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 8px 20px;
+    color: #Fff;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .signupPage-left {
@@ -23,21 +47,60 @@
     align-items: center;
 }
 
+.signupPage-left h2 {
+    font-size: 2.2rem;
+    color: var(--button-bg);
+    margin-bottom: 10px;
+}
+
+.signupPage-left .inputfield {
+    border: none;
+    background-color: var(--box-shadow);
+    padding: 8px 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 7px;
+    width: 30vw;
+    color: var(--primary-text);
+}
+
+.signupPage-left p {
+    color: grey;
+}
+
 .button-label {
     display: inline-block;
     padding: 10px;
     margin: 5px;
-    background-color: #3498db;
+    background-color: transparent;
+    border: 2px solid var(--button-bg);
     color: #fff;
-    border: none;
     cursor: pointer;
+    color: var(--button-bg);
+    width: 14vw;
+    border-radius: 7px;
+    font-size: 0.9rem;
 }
 
 .button-label:hover {
-    background-color: #2980b9;
+    background-color: var(--button-bg);
+    color: #fff;
 }
 
 /* Style for active button */
 .button-label.active {
-    background-color: #2980b9;
+    background-color: var(--button-bg);
+    color: #fff;
+}
+
+.submitbtn {
+    border: none;
+    background-color: var(--button-bg);
+    color: #Fff;
+    padding: 10px;
+    width: 17vw;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 1rem;
 }

@@ -4,10 +4,12 @@ import './signup.css'
 import { auth, db } from '../../config/firebase-config'
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth'
 import { addDoc, collection } from "firebase/firestore";
+import { useNavigate } from 'react-router-dom/'
 
 
 export function Signup() {
 
+  const navigation = useNavigate();
 
   const [formData, setFormData] = useState({
     name: '',
@@ -56,9 +58,10 @@ export function Signup() {
       <div className="signupPage-left">
         <h2>Signup</h2>
         <form onSubmit={handleSubmit}>
-          {/* Name */}
-          <label htmlFor="name">Name:</label>
+
           <input
+            className="inputfield"
+            placeholder="Name"
             type="text"
             id="name"
             name="name"
@@ -69,9 +72,10 @@ export function Signup() {
 
           <br />
 
-          {/* Email */}
-          <label htmlFor="email">Email:</label>
+
           <input
+            className="inputfield"
+            placeholder="email"
             type="email"
             id="email"
             name="email"
@@ -82,9 +86,10 @@ export function Signup() {
 
           <br />
 
-          {/* Password */}
-          <label htmlFor="password">Password:</label>
+
           <input
+            className="inputfield"
+            placeholder="Password"
             type="password"
             id="password"
             name="password"
@@ -95,9 +100,9 @@ export function Signup() {
 
           <br />
 
-          {/* Confirm Password */}
-          <label htmlFor="confirmPassword">Confirm Password:</label>
           <input
+            className="inputfield"
+            placeholder="Confirm Password"
             type="password"
             id="confirmPassword"
             name="confirmPassword"
@@ -107,8 +112,7 @@ export function Signup() {
           />
 
           <br />
-
-          {/* Signup as Student or Recruiter */}
+          <p>Continue as </p>
           <label>
             <input
               type="radio"
@@ -148,13 +152,14 @@ export function Signup() {
           <br />
 
           {/* Submit Button */}
-          <input type="submit" value="Signup" />
+          <input className="submitbtn" type="submit" value="SIGN UP" />
         </form>
       </div>
       <div className="signupPage-right">
-        <h1>Hello, Friends !!</h1>
-        <h3>Register with your personal detail to use all of the site features !</h3>
-        <button>Register</button>
+        <h1>Hello, Friend!</h1>
+        {/* <h3>Register with your personal detail to use all of the site features.</h3> */}
+        <h3>Login with your personal detail to use all of the site features.</h3>
+        <button onClick={() => { navigation("/signin") }}>Sign In</button>
       </div>
     </div>
   )
