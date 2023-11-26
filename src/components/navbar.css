@@ -2,11 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700;1,800&family=Outfit:wght@200;300;400;500;600;700;800;900&family=Patua+One&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
 
-
-/* font-family: 'Baloo Da 2', sans-serif; */
-
-
-
+.navclose {
+    display: none;
+}
 
 .navbar {
     display: flex;
@@ -26,7 +24,7 @@
     align-items: center;
 }
 
-.navbar .navbar-left logo .logo-txt {
+.navbar .navbar-left .logo-txt {
     line-height: 1;
     color: var(--primary-text);
     color: #00b466;
@@ -65,8 +63,7 @@
 }
 
 .navbar-right .toggle-button {
-    /* width: 2vw; */
-    size: 40px;
+    size: 30px;
     margin-right: 1.5vw;
 }
 
@@ -76,7 +73,7 @@
 }
 
 .navbar .navbar-right button {
-    padding: 4px 17px;
+    padding: 5px 17px;
     border-radius: 27px;
     border: none;
     background-color: var(--secondary-bg);

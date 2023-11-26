@@ -3,12 +3,13 @@
     --primary-text: #1b1b1b;
     --secondary-text: #ffff;
     --secondary-bg: #020817;
+    --input-light: #ebebeb;
     --hover-bg: #202020;
     --gradient-green2: #0bca77;
     --gradient-green1: #008d3b;
     --gradient-yellow2: #ffd53b;
     --gradient-yellow1: #cea100;
-    --box-shadow: #cecece;
+    --box-shadow: #d6d6d6;
     --button-bg: #02A960;
     --button-text: #f8f8f8;
 }
