@@ -55,7 +55,7 @@
 
 .signupPage-left .inputfield {
     border: none;
-    background-color: var(--box-shadow);
+    background-color: var(--input-light);
     padding: 8px 8px;
     font-size: 1rem;
     border-radius: 5px;
