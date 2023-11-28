@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import './navbar.css'
-import ReactSwitch from 'react-switch'
-import { useContext } from 'react'
-import { themeContext } from '../App'
-import { useNavigate, useLocation } from 'react-router-dom'
-import { getAuth } from '../config/firebase-config'
+import React, { useEffect, useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
+import './navbar.css';
+import ReactSwitch from 'react-switch';
+import { themeContext } from '../App';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { signOut } from 'firebase/auth';
+import { auth } from '../config/firebase-config';
 
 export function Navbar() {
     const navigate = useNavigate();
@@ -20,7 +20,32 @@ export function Navbar() {
         }
     }, [location.pathname]);
 
-    const { toggleTheme, theme } = useContext(themeContext)
+    const { toggleTheme, theme, userData } = useContext(themeContext);
+
+    const [selectedOption, setSelectedOption] = useState(null);
+
+    const handleDropdownChange = (event) => {
+        setSelectedOption(event.target.value);
+        // You can perform actions based on the selected option here
+        if (event.target.value === 'profile') {
+            console.log('Profile clicked');
+            // Add code for profile action
+        } else if (event.target.value === 'logout') {
+            handleLogout();
+            console.log('Logout clicked');
+            // Add code for logout action
+        }
+    };
+
+    const handleLogout = () => {
+        signOut(auth)
+            .then(() => { })
+            .catch((error) => {
+                console.log(error);
+            });
+        navigate("/");
+    };
+
     return (
         <div className={navopen ? "navbar" : "navclose"}>
             <div className='navbar-left'>
@@ -34,11 +59,24 @@ export function Navbar() {
                 </ul>
             </div>
             <div className='navbar-right'>
-                {/* {theme === "light" ? <p className='mode-name'>Light mode</p> : <p className='mode-name'>Dark mode</p>} */}
                 <ReactSwitch className='toggle-button' onChange={toggleTheme} checked={theme === "light"} onColor="#02A960" />
-                <button onClick={() => { navigate("/signin") }}>Login / SignUp</button>
+                {userData ? (
+                    <div className="dropdown">
+                        <select
+                            id="dropdown-options"
+                            name="dropdown-options"
+                            value={selectedOption}
+                            onChange={handleDropdownChange}
+                        >
+                            <option style={{ display: "none" }} value="User">{userData.displayName}</option>
+                            <option value="profile"  >Profile</option>
+                            <option value="logout"  >Logout</option>
+                        </select>
+                    </div>
+                ) : (
+                    <button onClick={() => { navigate("/signin") }}>Login / SignUp</button>
+                )}
             </div>
         </div>
-    )
+    );
 }
-

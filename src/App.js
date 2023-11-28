@@ -11,11 +11,24 @@ import { Footer } from './components/footer'
 import { VideoListPage } from './pages/VideoCourses/VideoListPage'
 import { VideoPlayerPage } from './pages/VideoCourses/streamer'
 import './variables.css'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createContext } from 'react'
+import { auth } from './config/firebase-config'
+
 export const themeContext = createContext(null)
 
 function App() {
+
+
+  const [userData, setUserData] = useState([])
+
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      setUserData(user)
+    })
+  })
+
 
   const [theme, setTheme] = useState("dark")
 
@@ -24,7 +37,7 @@ function App() {
   }
 
   return (
-    <themeContext.Provider value={{ theme, toggleTheme }} >
+    <themeContext.Provider value={{ theme, toggleTheme, userData }} >
       <div className="App" id={theme} >
         <Router>
           <Navbar />
