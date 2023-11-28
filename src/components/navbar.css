@@ -72,7 +72,7 @@
     margin-right: 1vw;
 }
 
-.navbar .navbar-right button {
+.navbar .navbar-right .login-btn {
     padding: 5px 17px;
     border-radius: 27px;
     border: none;
@@ -84,7 +84,55 @@
     font-family: 'Baloo Da 2', sans-serif;
 }
 
-.navbar .navbar-right button:hover {
+.navbar .navbar-right .login-btn:hover {
     background-color: var(--hover-bg);
+    cursor: pointer;
+}
+
+.dropdown-body {
+    position: absolute;
+    top: 4.5rem;
+    right: 4rem;
+    width: 100px;
+    padding: 15px 15px 15px 5px;
+    border-radius: 4px;
+    background-color: var(--secondary-text);
+    /* border: 1px solid var(--primary-text); */
+    cursor: pointer;
+    box-shadow: 4px 6px 8px 5px var(--box-shadow), 2px 6px 10px 0 var(--box-shadow);
+}
+
+.dropdown-body::before {
+    position: absolute;
+    border-radius: 4px;
+    right: 1rem;
+    content: "";
+    top: -0.8rem;
+    width: 25px;
+    height: 25px;
+    background-color: var(--secondary-text);
+    /* border-left: 1px solid var(--primary-text);
+    border-top: 1px solid var(--primary-text); */
+    /* box-shadow: 1px 4px 7px 0 var(--box-shadow), 2px 6px 10px 0 var(--box-shadow); */
+    transform: rotate(45deg);
+}
+
+.dropdown-li {
+    list-style: none;
+    color: var(--primary-text);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dropdown-body-close {
+    display: none;
+}
+
+.profile-btn {
+    color: var(--primary-text);
+    background-color: transparent;
+    border: none;
+    font-weight: 900;
+    font-size: 1.2rem;
     cursor: pointer;
 }

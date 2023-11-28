@@ -63,7 +63,6 @@ export function Signup() {
         seterrormsg(err.message || err.toString());
       }
 
-      // console.log(err);
     }
   };
 
