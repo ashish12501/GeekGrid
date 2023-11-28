@@ -5,6 +5,7 @@ import ReactSwitch from 'react-switch'
 import { useContext } from 'react'
 import { themeContext } from '../App'
 import { useNavigate, useLocation } from 'react-router-dom'
+import { getAuth } from '../config/firebase-config'
 
 export function Navbar() {
     const navigate = useNavigate();

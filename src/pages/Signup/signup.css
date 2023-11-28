@@ -55,7 +55,7 @@
 
 .signupPage-left .inputfield {
     border: none;
-    background-color: var(--box-shadow);
+    background-color: var(--input-light);
     padding: 8px 8px;
     font-size: 1rem;
     border-radius: 5px;
@@ -93,6 +93,10 @@
     color: #fff;
 }
 
+.errormessage {
+    margin-top: 10px;
+}
+
 .submitbtn {
     border: none;
     background-color: var(--button-bg);
@@ -103,4 +107,17 @@
     font-weight: 600;
     margin-top: 20px;
     font-size: 1rem;
+}
+
+.btnLoading {
+    border: none;
+    /* background-color: var(--button-bg); */
+    color: #Fff;
+    padding: 10px;
+    width: 17vw;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: var(--input-light);
 }

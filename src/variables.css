@@ -3,7 +3,7 @@
     --primary-text: #1b1b1b;
     --secondary-text: #ffff;
     --secondary-bg: #020817;
-    --input-light: #ebebeb;
+    --input-light: #dfdede;
     --hover-bg: #202020;
     --gradient-green2: #0bca77;
     --gradient-green1: #008d3b;
@@ -19,6 +19,7 @@
     --primary-text: #f8f8f8;
     --secondary-text: #181818;
     --secondary-bg: #f8f8f8;
+    --input-light: #302e2e;
     --hover-bg: #d4d1d1;
     --gradient-green2: #75dda0;
     --gradient-green1: #00c570;
