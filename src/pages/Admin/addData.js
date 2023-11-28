@@ -9,7 +9,7 @@ export function AddData() {
     const [intro, setIntro] = useState('');
     const [content, setContent] = useState('');
     const articlesCollectionRef = collection(db, 'articles');
-
+    const jobsRef = collection(db, "jobs")
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -49,8 +49,15 @@ export function AddData() {
     const skillOptions = ["reactjs", "javascript", "python", "nodejs", "figma", "php", "c++", "django"]; // Add more skills as needed
 
 
-    const addJobToFirestore = () => {
+    const addJobToFirestore = async (jobData) => {
 
+        try {
+            await addDoc(jobsRef, jobData);
+            console.log("document added sucessfully")
+        }
+        catch (err) {
+            console.log('error adding document:', err)
+        }
     }
 
 
