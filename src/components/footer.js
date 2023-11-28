@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './footer.css'
+import { useLocation } from 'react-router-dom'
+
 export function Footer() {
+
+    const location = useLocation();
+
+    const [footerDisplay, setfooterDisplay] = useState(true);
+    useEffect(() => {
+        if (location.pathname === "/signup" || location.pathname === "/signin") {
+            setfooterDisplay(false);
+        } else {
+            setfooterDisplay(true);
+        }
+    }, [location.pathname]);
+
     return (
-        <footer>
+        <footer className={footerDisplay ? "" : "closefooter"}>
             <div class="content">
                 <div class="top">
                     <div class="logo-details">
