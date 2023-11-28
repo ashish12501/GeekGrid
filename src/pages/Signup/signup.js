@@ -50,6 +50,8 @@ export function Signup() {
 
       setLoading(false);
       console.log("Document written with ID: ", docRef.id);
+      navigation('/');
+
     } catch (err) {
       setLoading(false);
       if (err.code === 'auth/email-already-in-use') {
