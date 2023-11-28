@@ -1,16 +1,15 @@
 import { useState } from "react";
-import React from 'react'
-import './signup.css'
-import { auth, db } from '../../config/firebase-config'
-import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth'
+import React from 'react';
+import './signup.css';
+import { auth, db } from '../../config/firebase-config';
+import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { addDoc, collection } from "firebase/firestore";
-import { useNavigate } from 'react-router-dom/'
-
+import { useNavigate } from 'react-router-dom/';
 
 export function Signup() {
-
   const navigation = useNavigate();
-
+  const [Loading, setLoading] = useState(false);
+  const [errormsg, seterrormsg] = useState("");
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -25,40 +24,52 @@ export function Signup() {
       signupType: value,
     }));
   };
-  const userRef = collection(db, "users")
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Add your form submission logic here
-    createUserWithEmailAndPassword(auth, formData.email, formData.password)
-      .then(async (res) => {
-        // setSubmitButtonDisabled(false)
-        const user = res.user;
-        await updateProfile(user, { displayName: formData.name })
-        // navigate("/")
-        const docRef = await addDoc(userRef, {
-          name: formData.name,
-          email: formData.email,
-          signupType: formData.signupType
-        });
-        console.log("Document written with ID: ", docRef.id);
-      })
-      .catch((err) => {
-        // setSubmitButtonDisabled(false)
-        // setLoading(false)
-        // setErrorMsg(err.message)
-        console.log(err)
-      })
-  };
 
-  // console.log(formData);signupPage
+  const userRef = collection(db, "users");
+
+  const handleSubmit = async (e) => {
+    setLoading(true);
+    e.preventDefault();
+
+    if (formData.password !== formData.confirmPassword) {
+      seterrormsg("Password didn't match!");
+      return;
+    }
+
+    try {
+      const res = await createUserWithEmailAndPassword(auth, formData.email, formData.password);
+      const user = res.user;
+
+      await updateProfile(user, { displayName: formData.name });
+
+      const docRef = await addDoc(userRef, {
+        name: formData.name,
+        email: formData.email,
+        signupType: formData.signupType
+      });
+
+      setLoading(false);
+      console.log("Document written with ID: ", docRef.id);
+    } catch (err) {
+      setLoading(false);
+      if (err.code === 'auth/email-already-in-use') {
+        seterrormsg('Email already in use, login or try another.');
+      }
+      else if (err.code === "auth/weak-password") {
+        seterrormsg('Weak password, use strong with atlead 8 charecters.');
+      } else {
+        seterrormsg(err.message || err.toString());
+      }
+
+      // console.log(err);
+    }
+  };
 
   return (
     <div className="signupPage">
       <div className="signupPage-left">
         <h2>Signup</h2>
         <form onSubmit={handleSubmit}>
-
           <input
             className="inputfield"
             placeholder="Name"
@@ -69,10 +80,7 @@ export function Signup() {
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             required
           />
-
           <br />
-
-
           <input
             className="inputfield"
             placeholder="email"
@@ -83,10 +91,7 @@ export function Signup() {
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             required
           />
-
           <br />
-
-
           <input
             className="inputfield"
             placeholder="Password"
@@ -97,9 +102,7 @@ export function Signup() {
             onChange={(e) => setFormData({ ...formData, password: e.target.value })}
             required
           />
-
           <br />
-
           <input
             className="inputfield"
             placeholder="Confirm Password"
@@ -110,7 +113,6 @@ export function Signup() {
             onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
             required
           />
-
           <br />
           <p>Continue as </p>
           <label>
@@ -130,7 +132,6 @@ export function Signup() {
               Student
             </div>
           </label>
-
           <label>
             <input
               type="radio"
@@ -148,20 +149,17 @@ export function Signup() {
               Recruiter
             </div>
           </label>
-
           <br />
-
+          <p className="errormessage">{errormsg}</p>
           {/* Submit Button */}
-          <input className="submitbtn" type="submit" value="SIGN UP" />
+          <input className={Loading ? "btnLoading" : "submitbtn"} type="submit" value="SIGN UP" />
         </form>
       </div>
       <div className="signupPage-right">
         <h1>Hello, Friend!</h1>
-        {/* <h3>Register with your personal detail to use all of the site features.</h3> */}
         <h3>Login with your personal detail to use all of the site features.</h3>
         <button onClick={() => { navigation("/signin") }}>Sign In</button>
       </div>
     </div>
-  )
+  );
 }
-

@@ -6,20 +6,33 @@ import { auth } from '../../config/firebase-config';
 
 export function Signin() {
   const navigation = useNavigate();
+  const [Loading, setLoading] = useState(false);
+
+  const [errormsg, seterrormsg] = useState("")
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   });
 
   const handleSubmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
 
     try {
       const userCredentials = await signInWithEmailAndPassword(auth, formData.email, formData.password);
       console.log('Login Successful');
       console.log(userCredentials.user);
+      setLoading(false);
       navigation('/');
     } catch (err) {
+      // seterrormsg(err.message || err.toString());
+      setLoading(false);
+      if (err.code === 'auth/invalid-login-credentials') {
+        seterrormsg('Invalid login credentials. Please check your email and password.');
+      } else {
+        seterrormsg(err.message || err.toString());
+      }
+
       console.error(err);
     }
   };
@@ -54,10 +67,12 @@ export function Signin() {
               required
             />
             <br />
+            <p className='errormessage'>{errormsg}</p>
 
             {/* Submit Button */}
-            <input className="submitbtn" type="submit" value="SIGN IN" />
+            <input className={Loading ? "btnLoading" : "submitbtn"} type="submit" value="SIGN IN" />
           </form>
+
         </div>
         <div className="signupPage-right">
           <h1>Hello, Friend!</h1>
