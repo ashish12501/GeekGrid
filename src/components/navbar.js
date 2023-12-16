@@ -23,8 +23,6 @@ export function Navbar() {
     const { toggleTheme, theme, userData } = useContext(themeContext);
 
 
-
-
     const handleLogout = () => {
         signOut(auth)
             .then(() => { })

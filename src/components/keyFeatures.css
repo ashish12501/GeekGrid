@@ -45,8 +45,8 @@
 }
 
 .keyCard {
-    margin: 7vh 0 5vh 0;
-    height: 40vh;
+    margin: 20px 0 10px 0;
+    height: 50%;
     width: 14vw;
     display: flex;
     flex-direction: column;
@@ -63,6 +63,7 @@
 
 .keyCard-Top img {
     height: 100px;
+    margin: 11px 0;
 }
 
 
@@ -79,6 +80,7 @@
 
 .keyCard-Bottom img {
     height: 90px;
+    margin: 12px 0;
     background-color: var(--secondary-text);
     background-color: white;
     border-radius: 55%;

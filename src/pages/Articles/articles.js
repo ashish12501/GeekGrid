@@ -16,13 +16,9 @@ export function Articles() {
       </div>
       <div className="right-article">
         <h3>Wanna Collaborate ?</h3>
-        <p className="paragraph">
-          Write us mail at ....
-        </p>
-        <p className="paragraph-2">amanpandeyap3@gmail.com</p>
-
+        <p className="paragraph">Write us mail at ....</p>
+        <p className="paragraph-2">GeekGrid@gmail.com</p>
       </div>
     </div>
-
   );
-};
+}
