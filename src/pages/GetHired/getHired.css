@@ -1,0 +1,45 @@
+.get-hired{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.job{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    justify-content: center;
+}
+.job .job-top{
+     display: flex;
+     flex-direction: row;
+     text-align: left;
+    align-items: flex-start;
+}
+.job .job-top .job-img{
+    background-color: rgb(220, 220, 220);
+    padding: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+.job .job-top .job-img img{
+    height: 40px;
+    margin: 5px;
+}
+.job .job-top .job-name .tittle{
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.job .job-top .job-name  .location{
+    color: grey;
+}
+
+.job .job-mid .job-skills{
+    margin: 0 10px ;
+}
