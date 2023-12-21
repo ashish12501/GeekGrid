@@ -53,3 +53,21 @@
     border-radius: 35%;
     font-size: 0.7rem;
 }
+
+.job .job-below{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.job .job-below .job-below-left{
+    display: flex;
+    flex-direction: row;
+}
+.job .job-below .job-below-left .job-detail{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    text-align: left;
+}
+
