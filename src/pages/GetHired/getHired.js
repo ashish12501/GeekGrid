@@ -41,6 +41,7 @@ export function JobList() {
                     <p>Last Date</p>
                     <p>{job.lastDate}</p>
                   </div>
+                  <div className="job-detail"></div>
                 </div>
                 <div className="job-below-right">
                   <button>Apply</button>
