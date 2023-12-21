@@ -27,9 +27,9 @@ export function JobList() {
                 </div>
               </div>
               <div className="job-mid">
-                <p className="job-skills">
-                  {job.skills.map((skill) => skill.label)}
-                </p>
+                {job.skills.map((skill) => (
+                  <p className="job-skills">{skill.label} </p>
+                ))}
               </div>
               <div className="job-below">
                 <p>{job.salary} lpa</p>
