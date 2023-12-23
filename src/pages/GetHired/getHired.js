@@ -44,7 +44,7 @@ export function JobList() {
                   <div className="job-detail"></div>
                 </div>
                 <div className="job-below-right">
-                  <button>Apply</button>
+                  <button src="{job.link}">Apply</button>
                 </div>
               </div>
             </div>
