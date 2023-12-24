@@ -30,7 +30,7 @@
     color: #00b466;
     font-family: 'Baloo Da 2', sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 
@@ -44,7 +44,6 @@
 
 .navbar .navbar-left ul li {
     list-style-type: none;
-
 }
 
 .navbar .navbar-left .links {
@@ -53,7 +52,7 @@
     font-weight: 600;
     color: var(--primary-text);
     font-family: 'Baloo Da 2', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .navbar-right {
@@ -67,10 +66,6 @@
     margin-right: 1.5vw;
 }
 
-.mode-name {
-    color: var(--primary-text);
-    margin-right: 1vw;
-}
 
 .navbar .navbar-right .login-btn {
     padding: 5px 17px;
@@ -79,7 +74,7 @@
     background-color: var(--secondary-bg);
     font-family: sans-serif;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 13px;
     color: var(--secondary-text);
     font-family: 'Baloo Da 2', sans-serif;
 }
@@ -135,4 +130,71 @@
     font-weight: 900;
     font-size: 1.2rem;
     cursor: pointer;
+}
+.navbar .navbar-right .hamberger{
+    display: none;
+}
+.nav-menu-down{
+    display: none;
+}
+/*1280 max
+
+
+
+*/
+
+
+@media (max-width: 850px){
+    .navbar .navbar-left .links{
+        font-size: 15px;
+    }
+    .navbar .navbar-left .logo-txt {
+        font-size: 9px;
+    }
+        .navbar .navbar-right .hamberger {
+            display: flex;
+            height: 30px;
+            margin-left: 10px;
+        }
+        .navbar .navbar-right .login-btn{
+            display: none;
+        }
+
+        .navbar .navbar-left ul{
+             display: none;
+
+        }
+                .nav-menu-down {
+                    display: flex;
+                    justify-content: center;
+                }
+                .nav-menu-down ul{
+                    height: 90vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 2vw;
+                }
+                                
+                                .nav-menu-down ul li{
+                    list-style-type: none;
+                                }
+                
+                .nav-menu-down ul li .links{
+                    text-decoration: none;
+                        font-weight: 600;
+                            color: var(--primary-text);
+                            font-family: 'Baloo Da 2', sans-serif;
+                            font-size: 18px;
+                            line-height: 3.2;
+                }
+}
+
+@media (max-width: 1050px) {
+    .navbar .navbar-left .links {
+        font-size: 16px;
+    }
+    .navbar .navbar-left .logo-txt{
+        font-size: 21px;
+    }
 }
