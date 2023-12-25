@@ -49,15 +49,17 @@
 .keyCard {
     margin: 20px 0 10px 0;
     height: 190px;
-    width: 170px;
     display: flex;
     flex-direction: column;
+    height: max-content;
+    align-items: center;
 }
 
 .keyCard-Top {
     height: max-content;
     background-color: #0bca77;
     height: 45%;
+    width: 173px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 173px;
 }
 
 .keyCard-Bottom img {
@@ -96,7 +99,11 @@
     color: var(--primary-text);
 
 }
-
+.keyCard  h4{
+    width: 90%;
+    font-size: 0.9vw;
+    font-weight: 500;
+}
 @media (max-width: 850px) {
   .keyCardContainer{
     flex-direction: column;
@@ -112,5 +119,12 @@
     font-weight: 450;
     line-height: 1.2;
     color: var(--primary-text);
+}
+.keyCard h3{
+    font-size: 4vw;
+}
+.keyCard h4 {
+    font-size: 3vw;
+    font-weight: 500;
 }
 }
