@@ -34,17 +34,19 @@ export function JobList() {
               <div className="job-below">
                 <div className="job-below-left">
                   <div className="job-detail">
-                    <p>Salary</p>
-                    <p>{job.salary} lpa</p>
+                    <p className="tittle">Salary</p>
+                    <p>{job.salary} LPA</p>
                   </div>
                   <div className="job-detail">
-                    <p>Last Date</p>
+                    <p className="tittle">Last Date</p>
                     <p>{job.lastDate}</p>
                   </div>
                   <div className="job-detail"></div>
                 </div>
                 <div className="job-below-right">
-                  <button src="{job.link}">Apply</button>
+                  <button className="job-below-right-button" src="{job.link}">
+                    Apply Now
+                  </button>
                 </div>
               </div>
             </div>
