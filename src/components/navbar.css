@@ -20,7 +20,8 @@
 .navbar .navbar-left {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     align-items: center;
 }
 
@@ -131,10 +132,16 @@
     font-size: 1.2rem;
     cursor: pointer;
 }
-.navbar .navbar-right .hamberger{
+.hamberger{
+    height: 26px;
     display: none;
+    margin-right: 15px;
 }
 .nav-menu-down{
+    display: none;
+}
+
+.nav-menu-down-close{
     display: none;
 }
 /*1280 max
@@ -142,18 +149,29 @@
 
 
 */
+@media (max-width: 650px){
+    .navbar{
+    padding: 2.5vh 5vw;
+    }
 
+}
 
 @media (max-width: 850px){
+
+
+    .navbar .navbar-left .logo-txt {
+            font-size: 9px;
+            color: var(--primary-text);
+            margin-top: 4px;
+        }
     .navbar .navbar-left .links{
         font-size: 15px;
     }
     .navbar .navbar-left .logo-txt {
         font-size: 9px;
     }
-        .navbar .navbar-right .hamberger {
+        .hamberger {
             display: flex;
-            height: 30px;
             margin-left: 10px;
         }
         .navbar .navbar-right .login-btn{

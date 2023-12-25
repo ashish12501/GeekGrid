@@ -17,6 +17,7 @@ export function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [navopen, setnavopen] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     if (location.pathname === "/signup" || location.pathname === "/signin") {
       setnavopen(false);
@@ -43,6 +44,23 @@ export function Navbar() {
     <>
       <div className={navopen ? "navbar" : "navclose"}>
         <div className="navbar-left">
+          <div className="hamberger">
+            {menuOpen ? (
+              <img
+                onClick={() => {
+                  setMenuOpen(!menuOpen);
+                }}
+                src={theme === "light" ? LightCross : DarkCross}
+              />
+            ) : (
+              <img
+                onClick={() => {
+                  setMenuOpen(!menuOpen);
+                }}
+                src={theme === "light" ? LightMenu : DarkMenu}
+              />
+            )}
+          </div>
           <h2 className="logo-txt">GeekGrid</h2>
           <ul>
             <li>
@@ -124,26 +142,26 @@ export function Navbar() {
               Login / SignUp
             </button>
           )}
-          <div className="hamberger">
-            {menuOpen === "true" ? (
+          {/* <div className="hamberger">
+            {menuOpen ? (
               <img
                 onClick={() => {
                   setMenuOpen(!menuOpen);
                 }}
-                src={theme === "light" ? LightMenu : DarkMenu}
+                src={theme === "light" ? LightCross : DarkCross}
               />
             ) : (
               <img
                 onClick={() => {
                   setMenuOpen(!menuOpen);
                 }}
-                src={theme == "light" ? LightCross : DarkCross}
+                src={theme === "light" ? LightMenu : DarkMenu}
               />
             )}
-          </div>
+          </div> */}
         </div>
       </div>
-      <div className="nav-menu-down">
+      <div className={menuOpen ? "nav-menu-down" : "nav-menu-down-close"}>
         <ul>
           <li>
             <Link to="/" className="links">
