@@ -15,15 +15,16 @@ export const VideoPlayerPage = () => {
     <div className="streamer">
       <div className="video-player-left">
         <iframe
-          width="560"
-          height="315"
+          //   width="560"
+          //           height="315"
+
           src={selectedVideo.embedLink}
           title={selectedVideo.name}
           frameBorder="0"
           allow="accelerometer; gyroscope; picture-in-picture; "
           allowFullScreen
         />
-        <div>
+        <div className="video-bottom-1">
           <div className="video-name-button">
             <h2>{selectedVideo.name}</h2>
             <button>Add to Classroom</button>
@@ -45,11 +46,12 @@ export const VideoPlayerPage = () => {
         <div className="suggested-videos">
           <h3>Suggested Courses</h3>
           {VideoList.map((video) => {
-            // <h3>Suggested Cources</h3>
             if (video.id !== selectedVideo.id) {
               return (
                 <div className="suggestion">
-                  <img src={video.image} alt={video.name} />
+                  <div className="video-image">
+                    <img src={video.image} alt={video.name} />
+                  </div>
                   <div className="suggestion-name">
                     <p key={video.id}>{video.name}</p>
                     <p className="instructor-name">{video.instructorname}</p>
