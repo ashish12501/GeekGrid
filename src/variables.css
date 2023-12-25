@@ -12,6 +12,8 @@
     --box-shadow: #d6d6d6;
     --button-bg: #02A960;
     --button-text: #f8f8f8;
+
+    --light-bg: #ececec;
 }
 
 #dark {
@@ -28,4 +30,6 @@
     --box-shadow: #0a0a0a;
     --button-bg: #02A960;
     --button-text: #f8f8f8;
+
+    --light-bg: #2c2b2b;
 }
