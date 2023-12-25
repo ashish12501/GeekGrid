@@ -42,12 +42,14 @@
     flex-direction: row;
     height: max-content;
     width: 90%;
+    height: max-content;
+    padding-bottom: 25px;
 }
 
 .keyCard {
     margin: 20px 0 10px 0;
-    height: 50%;
-    width: 14vw;
+    height: 190px;
+    width: 170px;
     display: flex;
     flex-direction: column;
 }
@@ -62,7 +64,7 @@
 }
 
 .keyCard-Top img {
-    height: 100px;
+    height: 75px;
     margin: 11px 0;
 }
 
@@ -79,7 +81,7 @@
 }
 
 .keyCard-Bottom img {
-    height: 90px;
+    height: 75px;
     margin: 12px 0;
     background-color: var(--secondary-text);
     background-color: white;
@@ -93,4 +95,22 @@
     margin-top: 10px;
     color: var(--primary-text);
 
+}
+
+@media (max-width: 850px) {
+  .keyCardContainer{
+    flex-direction: column;
+  }
+.keyContainer h2 {
+    font-size: 6vw;
+}
+
+.keyContainer p {
+    font-family: 'Baloo Da 2', sans-serif;
+    width: 90%;
+    font-size: 3vw;
+    font-weight: 450;
+    line-height: 1.2;
+    color: var(--primary-text);
+}
 }
