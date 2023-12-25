@@ -1,6 +1,8 @@
 .parent-article {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
+    padding: 0 5vw;
 }
 
 .left-article {
@@ -8,7 +10,7 @@
     flex-direction: column;
     width: 60vw;
     text-align: left;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     margin-top: 40px;
 }
 
@@ -25,8 +27,7 @@
 }
 
 .left-article .article-box button {
-    width: 9vw;
-    padding: 8px 0px 8px 0px;
+    padding: 8px;
     border: none;
     background-color: var(--button-bg);
     color: var(--button-text);
@@ -39,7 +40,7 @@
     margin-top: 40px;
     width: fit-content;
     text-align: left;
-    margin-left: 100px;
+    margin-left: 2vw;
     color: var(--primary-text);
 }
 
@@ -62,4 +63,17 @@
 
 .article-box {
     padding: 25px 0;
+}
+
+@media (max-width: 900px){
+    .parent-article {
+        flex-direction: column;
+    }
+
+        .left-article{
+            width: 90vw;
+        }
+        .right-article{
+            align-items: left;
+        }
 }

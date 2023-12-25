@@ -164,27 +164,57 @@ export function Navbar() {
       <div className={menuOpen ? "nav-menu-down" : "nav-menu-down-close"}>
         <ul>
           <li>
-            <Link to="/" className="links">
+            <Link
+              to="/"
+              className="links"
+              onClick={() => {
+                setMenuOpen(!menuOpen);
+              }}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/learn" className="links">
+            <Link
+              to="/learn"
+              className="links"
+              onClick={() => {
+                setMenuOpen(!menuOpen);
+              }}
+            >
               Learn
             </Link>
           </li>
           <li>
-            <Link to="/articles" className="links">
+            <Link
+              to="/articles"
+              className="links"
+              onClick={() => {
+                setMenuOpen(!menuOpen);
+              }}
+            >
               Articles
             </Link>
           </li>
           <li>
-            <Link to="/gethired" className="links">
+            <Link
+              to="/gethired"
+              className="links"
+              onClick={() => {
+                setMenuOpen(!menuOpen);
+              }}
+            >
               Get Hired
             </Link>
           </li>
           <li>
-            <Link to="/about" className="links">
+            <Link
+              to="/about"
+              className="links"
+              onClick={() => {
+                setMenuOpen(!menuOpen);
+              }}
+            >
               About
             </Link>
           </li>
