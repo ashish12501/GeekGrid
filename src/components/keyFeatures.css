@@ -2,7 +2,6 @@
 
 .keyFeature {
     height: max-content;
-    /* width: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,6 +102,7 @@
     width: 90%;
     font-size: 0.9vw;
     font-weight: 500;
+    color: var(--primary-text);
 }
 @media (max-width: 850px) {
   .keyCardContainer{
