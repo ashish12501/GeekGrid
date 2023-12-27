@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import useFetchJobs from "../../hooks/getJobs";
 import joblight from "../../assets/images/job-light.png";
 import jobdark from "../../assets/images/job-dark.png";
 import "./getHired.css";
+import { themeContext } from "../../App";
 
 export function JobList() {
+  const theme = useContext(themeContext);
   const { jobs, loading } = useFetchJobs();
 
   if (loading) {
@@ -19,7 +21,7 @@ export function JobList() {
             <div className="job">
               <div className="job-top">
                 <div className="job-img">
-                  <img src={joblight} />
+                  <img src={theme === "light" ? joblight : jobdark} alt="" />
                 </div>
                 <div className="job-name">
                   <p className="tittle">{job.title}</p>
@@ -44,7 +46,12 @@ export function JobList() {
                   <div className="job-detail"></div>
                 </div>
                 <div className="job-below-right">
-                  <button className="job-below-right-button" src="{job.link}">
+                  <button
+                    className="job-below-right-button"
+                    onClick={() => {
+                      window.open(job.link, "_blank");
+                    }}
+                  >
                     Apply Now
                   </button>
                 </div>
