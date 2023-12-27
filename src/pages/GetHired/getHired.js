@@ -2,11 +2,12 @@ import React, { useContext } from "react";
 import useFetchJobs from "../../hooks/getJobs";
 import joblight from "../../assets/images/job-light.png";
 import jobdark from "../../assets/images/job-dark.png";
+
 import "./getHired.css";
 import { themeContext } from "../../App";
 
 export function JobList() {
-  const theme = useContext(themeContext);
+  const { theme } = useContext(themeContext);
   const { jobs, loading } = useFetchJobs();
 
   if (loading) {
@@ -35,10 +36,14 @@ export function JobList() {
               </div>
               <div className="job-below">
                 <div className="job-below-left">
-                  <div className="job-detail">
-                    <p className="tittle">Salary</p>
-                    <p>{job.salary} LPA</p>
-                  </div>
+                  {job.salary === "" ? (
+                    <></>
+                  ) : (
+                    <div className="job-detail">
+                      <p className="tittle">Salary</p>
+                      <p>{job.salary} LPA</p>
+                    </div>
+                  )}
                   <div className="job-detail">
                     <p className="tittle">Last Date</p>
                     <p>{job.lastDate}</p>
