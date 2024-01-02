@@ -8,7 +8,6 @@ import { AddData } from "./pages/Admin/addData";
 import { Articles } from "./pages/Articles/articles";
 import { Navbar } from "./components/navbar";
 import { Footer } from "./components/footer";
-// import { Topbanner } from "./components/topbanner";
 
 import { VideoListPage } from "./pages/VideoCourses/VideoListPage";
 import { VideoPlayerPage } from "./pages/VideoCourses/streamer";
@@ -39,7 +38,6 @@ function App() {
     <themeContext.Provider value={{ theme, toggleTheme, userData }}>
       <div className="App" id={theme}>
         <Router>
-          {/* <Topbanner /> */}
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
