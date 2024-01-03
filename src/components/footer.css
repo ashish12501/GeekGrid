@@ -109,7 +109,7 @@ footer .content .link-boxes .box {
 .link-boxes .input-box input {
     height: 40px;
     width: calc(100% + 55px);
-    outline: none;
+    outline-color: transparent;
     border: 2px solid var(--primary-text);
     background: var(--primary-bg);
     border-radius: 4px;
