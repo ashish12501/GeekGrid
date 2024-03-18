@@ -8,7 +8,6 @@ import { AddData } from "./pages/Admin/addData";
 import { Articles } from "./pages/Articles/articles";
 import { Navbar } from "./components/navbar";
 import { Footer } from "./components/footer";
-
 import { VideoListPage } from "./pages/VideoCourses/VideoListPage";
 import { VideoPlayerPage } from "./pages/VideoCourses/streamer";
 import { JobList } from "./pages/GetHired/getHired";
@@ -16,8 +15,9 @@ import "./variables.css";
 import { useEffect, useState } from "react";
 import { createContext } from "react";
 import { auth } from "./config/firebase-config";
+import Footer2 from "./components/Footer2";
 
-export const themeContext = createContext(null);
+export const AppContext = createContext(null);
 
 function App() {
   const [userData, setUserData] = useState([]);
@@ -29,13 +29,22 @@ function App() {
   });
 
   const [theme, setTheme] = useState("light");
+  const [applicationOpen, setApplicationOpen] = useState(false);
   //  Theme Toggling goes here !!
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
-    <themeContext.Provider value={{ theme, toggleTheme, userData }}>
+    <AppContext.Provider
+      value={{
+        theme,
+        toggleTheme,
+        userData,
+        applicationOpen,
+        setApplicationOpen,
+      }}
+    >
       <div className="App" id={theme}>
         <Router>
           <Navbar />
@@ -50,10 +59,11 @@ function App() {
             <Route path="/learn" element={<VideoListPage />} />
             <Route path="/gethired" element={<JobList />} />
           </Routes>
-          <Footer />
+          {/* <Footer /> */}
+          <Footer2 />
         </Router>
       </div>
-    </themeContext.Provider>
+    </AppContext.Provider>
   );
 }
 

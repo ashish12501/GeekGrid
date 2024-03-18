@@ -1,24 +1,32 @@
 import React, { useState } from "react";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import { db } from "../../config/firebase-config";
 import "./addData.css"; // Assuming you have a CSS file named AddData.css
 import Select from "react-select";
+import { db, storage } from "../../config/firebase-config"; // Import storage along with db
 
 export function AddData() {
   const [title, setTitle] = useState("");
   const [intro, setIntro] = useState("");
-  const [content, setContent] = useState("");
+  const [contentFile, setContentFile] = useState(null);
   const articlesCollectionRef = collection(db, "articles");
   const jobsRef = collection(db, "jobs");
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
+      // Upload the content file to Firebase Storage
+      const storageRef = storage.ref();
+      const fileRef = storageRef.child(`articles/${contentFile.name}`);
+      await fileRef.put(contentFile);
+
+      // Get the download URL of the uploaded file
+      const downloadURL = await fileRef.getDownloadURL();
+
       // Create a new document in Firestore with serverTimestamp
       await addDoc(articlesCollectionRef, {
         title,
         intro,
-        content,
+        contentURL: downloadURL, // Store the download URL of the content
         createdAt: serverTimestamp(),
       });
 
@@ -28,7 +36,7 @@ export function AddData() {
       // Clear the form inputs
       setTitle("");
       setIntro("");
-      setContent("");
+      setContentFile(null);
     } catch (error) {
       console.error("Error adding document: ", error);
     }
@@ -59,14 +67,18 @@ export function AddData() {
 
   const addJobToFirestore = async (jobData) => {
     try {
-      await addDoc(jobsRef, jobData);
-      console.log("document added sucessfully");
+      const jobWithTimestamp = {
+        ...jobData,
+        created_at: serverTimestamp(),
+      };
+      await addDoc(jobsRef, jobWithTimestamp);
+      console.log("Document added successfully");
     } catch (err) {
-      console.log("error adding document:", err);
+      console.log("Error adding document:", err);
     }
   };
 
-  const handleSubmit2 = (e) => {
+  const handleSubmitJob = (e) => {
     e.preventDefault();
 
     // Call your Firestore helper function to add job data
@@ -77,7 +89,6 @@ export function AddData() {
       title: "",
       location: "",
       salary: "",
-      link: "",
       lastDate: "",
       skills: [],
     });
@@ -111,11 +122,12 @@ export function AddData() {
             />
           </div>
           <div className="form-group">
-            <label>Content:</label>
-            <textarea
-              value={content}
-              onChange={(e) => setContent(e.target.value)}
+            <label>Content File:</label>
+            <input
+              type="file"
+              onChange={(e) => setContentFile(e.target.files[0])}
               className="form-control"
+              accept=".md" // Accept only Markdown files
             />
           </div>
           <button type="submit" className="submit-button">
@@ -127,7 +139,7 @@ export function AddData() {
       {/* <div className=''> */}
       <div className="add-data-container">
         <h2>Add Job Opening</h2>
-        <form onSubmit={handleSubmit2}>
+        <form onSubmit={handleSubmitJob}>
           <div className="form-group">
             <label>Title:</label>
             <input
@@ -164,16 +176,6 @@ export function AddData() {
             />
           </div>
           <div className="form-group">
-            <label>Link:</label>
-            <input
-              type="text"
-              value={jobData.link}
-              onChange={(e) => setJobData({ ...jobData, link: e.target.value })}
-              className="form-control"
-              required
-            />
-          </div>
-          <div className="form-group">
             <label>Last Date:</label>
             <input
               type="date"
@@ -203,7 +205,6 @@ export function AddData() {
           </button>
         </form>
       </div>
-      {/* </div> */}
     </div>
   );
 }

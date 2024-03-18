@@ -10,8 +10,8 @@
     flex-direction: column;
     width: 60vw;
     text-align: left;
-    /* margin-left: 80px; */
     margin-top: 40px;
+    min-height: 70vh;
 }
 
 .left-article .article-box h3 {

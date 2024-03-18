@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import ReactSwitch from "react-switch";
-import { themeContext } from "../App";
+import { AppContext } from "../App";
 import { useNavigate, useLocation } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../config/firebase-config";
@@ -26,7 +26,7 @@ export function Navbar() {
     }
   }, [location.pathname]);
 
-  const { toggleTheme, theme, userData } = useContext(themeContext);
+  const { toggleTheme, theme, userData } = useContext(AppContext);
 
   const handleLogout = () => {
     signOut(auth)
@@ -51,6 +51,7 @@ export function Navbar() {
                   setMenuOpen(!menuOpen);
                 }}
                 src={theme === "light" ? LightCross : DarkCross}
+                alt=""
               />
             ) : (
               <img
@@ -58,6 +59,7 @@ export function Navbar() {
                   setMenuOpen(!menuOpen);
                 }}
                 src={theme === "light" ? LightMenu : DarkMenu}
+                alt=""
               />
             )}
           </div>
