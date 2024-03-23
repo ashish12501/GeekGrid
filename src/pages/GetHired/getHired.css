@@ -1,20 +1,24 @@
-.get-hired{
+.get-hired {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 0 5vw;
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow-y: auto;
+    max-height: 95vh;
 }
-.job{
-    width: 40vw;
+
+.job {
+    width: 42vw;
     display: flex;
     flex-direction: column;
-    height: max-content;
     justify-content: center;
     border: 1px solid grey;
-    padding: 12px;
+    padding: 20px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 .job .job-top{
      display: flex;
