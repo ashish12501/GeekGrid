@@ -136,16 +136,14 @@ function Jobs() {
 
   if (!allJobs) {
     return (
-      <div className="mx-20 flex flex-col ">
-        <h2 className="p-1 mb-4 w-90 mx-40i py-2 mx-10 font-semibold bg-green-200 dark:bg-gray-500 rounded-md text-gray-600 dark:text-white">
-          Hit the Searchbar to keep Your Search Going !!
+      <div className="md:mx-20 sm:mx-15 flex flex-col my-14 md:my-0">
+        <h2 className="p-1 mt-0 mb-10 md:mb-0 md:w-90 w-95 py-2 mx-10 font-semibold bg-green-200 dark:bg-gray-500 rounded-md text-gray-600 dark:text-white">
+          Start you job hunt here!!
         </h2>
-        <img src={NoJobs} alt="" className="mx-20"></img>
+        <img src={NoJobs} alt="" className="mx-16 md:mx-0"></img>
       </div>
     );
   }
-
-  // Add return statement for the default case if needed
 }
 
 export default Jobs;

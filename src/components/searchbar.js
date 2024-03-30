@@ -31,12 +31,12 @@ function Searchbar() {
   };
 
   return (
-    <div className="flex flex-row w-full mt-10 md:mt-0 mb-4">
-      <form onSubmit={handleSubmit} className="flex w-full">
+    <div className="flex flex-row w-full mt-10 md:mt-0 mb-4 ">
+      <form onSubmit={handleSubmit} className="flex w-full mx-3 md:mx-0">
         <input
           type="text"
           id="simple-search"
-          className="dark:bg-zinc-900 w-full focus:ring-green-500 focus:border-green-500 bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block ps-10 px-2.5 py-4 focus:ring-0 focus:outline-none dark:border-gray-600 dark:placeholder-gray-400 dark:text-white ml-11"
+          className="dark:bg-zinc-900 w-full focus:ring-green-500 focus:border-green-500 bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block ps-10 px-3 py-4 focus:ring-0 focus:outline-none dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
           placeholder="Search by internship title/skill"
           value={searchText}
           onChange={handleInputChange}
@@ -44,7 +44,7 @@ function Searchbar() {
         />
         <button
           type="submit"
-          className="py-2 px-6 ms-2 text-sm font-medium text-white bg-green-500 rounded-lg hover:bg-green-600 focus:ring-0 focus:outline-none mr-10"
+          className="py-2 px-6 ms-2 text-sm font-medium text-white bg-green-500 rounded-lg hover:bg-green-600 focus:ring-0 focus:outline-none md:mr-10 sm:mr-0"
         >
           <span className="font-semibold">Search</span>
         </button>
