@@ -7,7 +7,6 @@ import { Signup } from "./pages/Signup/signup";
 import { AddData } from "./pages/Admin/addData";
 import { Articles } from "./pages/Articles/articles";
 import { Navbar } from "./components/navbar";
-import { Footer } from "./components/footer";
 import { VideoListPage } from "./pages/VideoCourses/VideoListPage";
 import { VideoPlayerPage } from "./pages/VideoCourses/streamer";
 import { JobList } from "./pages/GetHired/getHired";
@@ -30,6 +29,9 @@ function App() {
 
   const [theme, setTheme] = useState("light");
   const [applicationOpen, setApplicationOpen] = useState(false);
+  const [jobDescription, setJobDescription] = useState(null);
+  const [allJobs, setAllJobs] = useState(null);
+  const [jobsLoading, setJobsLoading] = useState(false);
   //  Theme Toggling goes here !!
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -43,6 +45,12 @@ function App() {
         userData,
         applicationOpen,
         setApplicationOpen,
+        allJobs,
+        setAllJobs,
+        jobDescription,
+        setJobDescription,
+        jobsLoading,
+        setJobsLoading,
       }}
     >
       <div className="App" id={theme}>
@@ -59,7 +67,6 @@ function App() {
             <Route path="/learn" element={<VideoListPage />} />
             <Route path="/gethired" element={<JobList />} />
           </Routes>
-          {/* <Footer /> */}
           <Footer2 />
         </Router>
       </div>

@@ -99,11 +99,11 @@ export function Footer() {
         <div class="bottom-details">
           <div class="bottom_text">
             <span class="copyright_text">
-              Copyright © 2023 <a href="#">GeekGrid</a>All rights reserved
+              Copyright © 2023 <a href="#kjk">GeekGrid</a>All rights reserved
             </span>
             <span class="policy_terms">
-              <a href="#">Privacy policy</a>
-              <a href="#">Terms & condition</a>
+              <a href="#bjb">Privacy policy</a>
+              <a href="#b">Terms & condition</a>
             </span>
           </div>
         </div>

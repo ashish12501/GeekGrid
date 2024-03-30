@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import "./sidebarLeft.css";
 import { AppContext } from "../App";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

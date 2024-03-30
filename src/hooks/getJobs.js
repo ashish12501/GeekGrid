@@ -36,7 +36,7 @@ const useFetchJobs = () => {
 
     fetchData();
   }, []);
-
+  console.log(jobs);
   return { jobs, loading };
 };
 
